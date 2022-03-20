@@ -1,0 +1,130 @@
+body {
+    padding: 2em;
+    background-color: hsl(210, 46%, 95%);
+    justify-content: center;
+    display : flex;
+    flex-flow : row wrap;   
+}
+
+@media all and (min-width:375px) {
+.flex-container {
+    width: 500px;;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container * {
+    flex: 1 100%;
+    place-content: center;
+}
+
+.img-main {
+    background-image: url("drawers.jpg");
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.main {
+    text-align: left;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+.avatar img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 10px;
+}
+
+.name h4{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.name p {
+    margin: 0px;
+    padding-bottom: 0px;
+}
+.share{
+    border-radius: 100%;
+    width: 40px;
+    cursor:pointer;
+}
+@media all and (min-width:1440px) {
+.flex-container {   
+        margin: 200px;
+        margin-left: 500px;
+        margin-right: 500px;
+    
+        width: 700px;;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+.flex-container * {
+        flex: 1 100%;
+        place-content: center;
+}
+  
+    .img-main {
+        background-image: url("drawers.jpg");
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+    
+    .main {
+        text-align: left;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        padding:10px;
+        background-color: white;        
+    }
+    
+    .avatar img {
+        border-radius: 100%;
+        width: 40px;
+    }
+    
+    .profile {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        grid-gap: 10px;
+    }
+    
+    .name h4{
+        color: hsl(217, 19%, 35%);
+        font-weight: 700;
+        margin: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .name p {
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+
+    .share{
+        border-radius: 100%;
+        width: 40px;
+        cursor:pointer;
+    }
+}
+}
